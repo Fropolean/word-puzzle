@@ -1,5 +1,5 @@
-describe ("FUNCTION-NAME", function() {
-  it("DESCRIBES FUNCTION", function(){
-    expect(FUNCTION-NAME(INPUT)).to.equal(OUTPUT);
+describe ("vowelSwap", function() {
+  it("finds the vowels in a string and replaces them with dashes", function(){
+    expect(vowelSwap("hello")).to.equal("h-ll-");
   });
 })

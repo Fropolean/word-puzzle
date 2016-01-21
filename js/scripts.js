@@ -1,10 +1,6 @@
 var vowelSwap = function(word) {
-  var vowels = "aeiou";
-
-  for (var i = 0; i < word.length; i++) {
     var output = word.replace(/[aeiou]/ig, "-");
     return output;
-  }
 }
 
 $(document).ready(function() {
@@ -12,8 +8,10 @@ $(document).ready(function() {
     var word = $("input#userInput").val();
     var result = vowelSwap(word);
 
-  $("#result").show();
-  $("#puzzle").text(result);
+  // $("span#result").show();
+  document.write(result);
+  $("span#puzzle").text(result);
+
   event.preventDefault();
   });
 });
